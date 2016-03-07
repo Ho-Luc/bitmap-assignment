@@ -1,12 +1,18 @@
 'use strict'
 
-const expect = require('chai').expect;
+var expect = require('chai').expect;
+var readPaletteBitmap = require('./../index.js').readPaletteBitmap;
+var transformPaletteBitmap = require('./../writeBmp.js').transformPaletteBitmap;
+var fs = require('fs');
 
-describe('async testing', function(){
-  it('blahsdsdf', function(){
-    process.nextTick(function(unicorn){
-      expect(true).to.equal(false);
-      unicorn();
-    });
+describe('testing if values in readPaletteBitmap are being reversed', function(){
+  before(function(){
+    var bitmap = readPaletteBitmap();
+    console.log(bitmap);
+  });
+
+  it('should return bitmap vals', function(){
+    expect(pixelArrayStart).to.equal(1078);
+    if (err) {throw err}
   });
 });
