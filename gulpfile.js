@@ -12,7 +12,7 @@ gulp.task('lint', function(){
 });
 
 gulp.task('mocha', function(){
-  return gulp.src('test/testGreet.js')
+  return gulp.src('test/bitmapTesting.js')
     .pipe(mocha())
 });
 
